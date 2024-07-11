@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto';
+  color: #fff; /* White text */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(17, 19, 20); 
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #211f1f5c;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+}
+
+
+.navbar {
+  position: sticky; /* Make the navbar sticky */
+  top: 0; 
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 19, 20, 0.5); 
+  padding: 20px;
+  z-index: 1000; 
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0px 15px;
+  background-color: transparent;
+  margin: 0 5px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: rgb(228, 228, 228);
+}
+
+
+
+
+.container {
+  margin: 15px auto;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.terms-of-service {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.privacy-section {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.privacy-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.privacy-section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.privacy-section ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.privacy-section li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.feedback {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.feedback h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}

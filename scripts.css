@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto';
+  color: #fff; /* White text */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(17, 19, 20); 
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #211f1f5c;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+}
+
+
+.navbar {
+  position: sticky; /* Make the navbar sticky */
+  top: 0; 
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 19, 20, 0.5); 
+  padding: 20px;
+  z-index: 1000; 
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0px 15px;
+  background-color: transparent;
+  margin: 0 5px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.5;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: rgb(228, 228, 228);
+}
+
+
+
+/* P H1 H2 H3 ELEMENTS CSS */
+p {
+  font-size: .899rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-right: 25px;
+  padding-top: 15px;
+  margin: 0;
+}
+
+
+h2 {
+  font-size: 2.6rem;
+  padding-left: 25px;
+}
+
+/* END ELEMENT CSS */
+
+
+/* PRODUCT CONTAINER */
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  background-color: #0d0d0d;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 20px;
+  margin: 60px auto; 
+  margin-bottom: 0;
+  position: relative; /* Positioning for noItemsMessage */
+  min-height: 200px; /* Ensures the container height remains consistent */
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+/* Center no items found message */
+#noItemsMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #ccc;
+  display: none;
+}
+/* PRODUCT CONTAINER END */
+
+/* BOX INSIDE PRODUCT CONTAINER */
+.box {
+  width: 21rem; 
+  text-align: left;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.box:hover {
+  border-color: rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.box-description {
+  padding: 10px;
+  width: 100%;
+  height: 6em;
+  background-color: #1b1b1b;
+  max-height: 6em;
+}
+
+.box-button:hover {
+  background-color: #31313172;
+}
+/* END BOX INSIDE PRODUCT CONTAINER */
+
+/* IMG CSS */
+.box-image {
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  width: 21rem; 
+}
+/* END IMG CSS */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  color: rgb(107, 107, 107);
+  background-color: #1b1b1b;
+  font-size: 16px;
+  border: 1px solid #5b5b5b5d;
+  border-radius: 4px;
+  width: 300px;
+  transition: border-color 0.3s;
+  outline: 1px solid rgb(55, 55, 55);
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2f2f2f;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+section {
+  height: 100vh;
+}
+
+.btn-container {
+  padding-right: 5%;
+  text-align: center;
+}
+
+.testingele h1{
+  padding-top: 88px;
+  height: 36px;
+}
+
+
+.Report, .Request {
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.758);
+  font-family: 'Roboto';
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 25px;
+  border: none;
+}
+
+.Report {
+  background-color: rgba(255, 0, 0, 0.196);
+}
+
+.Request {
+  background-color: rgba(74, 255, 74, 0.111);
+}
+
+.Request:hover {
+  background-color: rgba(74, 255, 74, 0.157);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.Report:hover {
+  background-color: rgba(255, 0, 0, 0.266);
+  color: rgba(255, 255, 255, 0.95);
+
+}
+
+.message {
+  margin-top: 20px; /* Add some space above the message */
+  font-size: 16px;
+  color: #333;
+}
+
+#scriptContainer {
+  background-color: rgb(32, 32, 32);
+  border-radius: 15px;
+  border: 1px solid rgb(75, 75, 75);
+  margin: 15px auto;
+  width: 50%;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.main-container p {
+  text-align: center;
+}
+
+.transparent {
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the transparency level here */
+  border: none;
+}

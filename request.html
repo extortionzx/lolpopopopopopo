@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="request.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Venom - Your #1 Source For Roblox</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Products</a>
+        <a href="scripts.html">Scripts</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="test.html">Latest News</a>
+    </div>
+    
+    <div class="container">
+        <div class="report-heading">
+          <h1><span style="color: lime;">Request</span> Roblox Script</h1>
+          <p>Your script will automatically go up in 1-2 minutes</p>
+          <p>Scripts will <b>NOT</b> be reviewed, so if your script gets reported any future request will be ignored.</p>
+          <p>Before requesting any Roblox script it must meet these requirements:</p>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li>Script has to be loadingstring or raw code</li>
+            <li>Script must be tested by the publisher.</li>
+            <li>Script must be undetected.</li>
+            <li>Script should not lead to account bans or in-game bans.</li>
+            <li>Script should not be buggy and unusable</li>
+            <li>Script should not be NSFW</li>
+          </ul>
+        </div>
+        <p style="text-align: center;">If your request does not meet these requirements it'll be taken down and any future request will be ignored.</p>
+        <!-- Make a script where every request will be an ip request to a discord webhook with a localstorage -->
+
+    </div>
+
+    <div class="container-form">
+      <h1>Script Request Form</h1>
+      <form id="requestForm">
+        <label for="ScriptName">Script Name</label>
+        <input type="text" id="scriptName" name="scriptName" required>
+
+        <label for="description">Script description</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+
+        <label for="loadingstring">Loadingstring</label>
+        <input type="text" id="loadingstring" name="loadingstring" required>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+    
+    <script src="report.js"></script>
+
+</body>
+</html>

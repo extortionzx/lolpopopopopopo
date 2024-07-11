@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Venom - Your #1 Source For Roblox</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Products</a>
+        <a href="scripts.html">Scripts</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="test.html">Latest News</a>
+    </div>
+    
+    <div class="container">
+        <div class="report-heading">
+            <h1>Making the <span style="color: red;">Report</span></h1>
+            <p>Before reporting any Roblox script it must meet these 3 requirements:</p>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li>Script is not working.</li>
+                <li>Script got your Roblox account banned or got you in-game banned.</li>
+                <li>Script is very buggy and not usable</li>
+            </ul>
+        </div>
+
+        <div class="container-form">
+            <h1>Report Script Form</h1>
+            <form id="requestForm">
+                <label for="linkstring">Link</label>
+                <input type="text" id="linkstring" name="linkstring" required>
+        
+                <label for="description">Report description</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+        
+                <button type="submit">Submit Report</button>
+            </form>
+            <div id="linkMessage" style="display:none;">Submitting...</div>
+            <p id="submissionMessage" style="display:none;">Report submitted successfully!</p>
+            <p id="cooldownMessage" style="display:none; color:red;">Warning: Please wait for cooldown period (1 hour) before submitting again.</p>
+        </div>
+        
+        
+        <script src="report.js"></script>
+    </div>
+</body>
+</html>

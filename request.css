@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto';
+  color: #fff; /* White text */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(17, 19, 20); 
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #211f1f5c;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+}
+
+
+.navbar {
+  position: sticky; /* Make the navbar sticky */
+  top: 0; 
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 19, 20, 0.5); 
+  padding: 20px;
+  z-index: 1000; 
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0px 15px;
+  background-color: transparent;
+  margin: 0 5px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: rgb(228, 228, 228);
+}
+
+
+.report-heading {
+  text-align: center;
+}
+
+.list {
+  width: 30%;
+  margin: auto;
+}
+
+p {
+  font-weight: 500;
+  opacity: .6;
+}
+
+li {
+  opacity: .6;
+}
+
+.container-form {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+  width: 55%;
+}
+
+.container-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d4b8af;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px; 
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5722;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e64a19;
+}

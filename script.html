@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scripts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Venom - Your #1 Source For Roblox</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Products</a>
+        <a href="scripts.html">Scripts</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="test.html">Latest News</a>
+    </div>
+
+    <div class="main-container">
+    <div id="scriptContainer">
+        <!-- Content will be dynamically loaded here -->
+    </div>
+
+    <div class="message">
+      <p>Thanks for choosing us as your script provider. Please enjoy the script!</p>
+      <p>Make sure to submit your scrips!</p>
+  </div>
+</div>
+    <script>
+        const scriptsData = [
+            { id: 1, details: '<ul><li>Fly</li><li>See Through</li></ul><p>loadstring(game:HttpGet(\'https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002\'))()</p>' },
+            { id: 2, image: 'aresenal.jpg', game: 'Arsenal', description: 'Arsenal Script | Kill All | Aimbot | ESP | THUNDER CLIENT | [Solara Support]', content: 'Detailed information about Arsenal script.' },
+            { id: 3, image: 'bloxfruit.jpg', game: 'Blox Fruit', description: '[UPTED, NO KEY SYSTEM] Zinc Hub', content: 'Detailed information about Zinc Hub script for Blox Fruit.' },
+            { id: 4, image: 'MM2Jpeg.jpg', game: 'Murder Mystery 2', description: 'Lunar Hub', content: 'Detailed information about Lunar Hub script for Murder Mystery 2.' },
+            { id: 5, image: 'blaWebp.jpg', game: 'Blade Ball', description: '[BEST] AutoParry', content: 'Detailed information about AutoParry script for Blade Ball.' },
+            { id: 6, image: 'prisonWebp.jpg', game: 'Prison Life', description: '[FE] Genesis FE', content: 'Detailed information about Genesis FE script for Prison Life.' },
+            { id: 7, image: 'unameWebp.jpg', game: 'Unnamed Shooters', description: 'Only headshots Script', content: 'Detailed information about Only headshots script for Unnamed Shooters.' },
+            { id: 8, image: 'doorsWebp.jpg', game: 'Doors', description: '[Solara supported] Doors scripts', content: 'Detailed information about Solara supported scripts for Doors.' },
+            { id: 9, image: 'doorsWebp.jpg', game: 'Natural Disaster', description: '[Solara supported] Natural Disaster', content: 'Detailed information about Solara supported scripts for Natural Disaster.' },
+            // Add more items here
+        ];
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const scriptId = parseInt(urlParams.get('id'), 10);
+        const script = scriptsData.find(s => s.id === scriptId);
+
+        if (script && script.details) {
+            document.getElementById('scriptContainer').innerHTML = script.details;
+        } else {
+            document.getElementById('scriptContainer').innerHTML = '<p>Details not found.</p>';
+            document.querySelector('.message').remove();
+            scriptContainer.classList.add('transparent');
+        }
+    </script>
+</body>
+</html>
